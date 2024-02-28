@@ -10,15 +10,49 @@
    <form name="kontakt_obrazac" action="" method="post" enctype="text/plain" autocomplete="off">
     
     <p>   
-        <label for="ime"> Ime i prezime </label><br>
-        <input id="ime" type="text" required>
+        <label for="ime">* Korisnik </label><br>
+        <input id="ime" type="text" required placeholder="Ime i prezime">
     </p>
  
     <p>
-        <label for="email"> e-mail: </label> <br>
-        <input type="email" type="email">
+        <label for="email">* Kontakt: </label> <br>
+        <input type="email" type="email" required placeholder="email adresa"><br>
+
+        <label for="tel"> Telefon: </label> <br>
+        <input type="tel" type="tel" placeholder="+385 9x xxx xxxx">
     </p>
     
+    <p>
+        <label>* Spol:</label><br>
+
+        <input type="radio" id="M" name="spol" required>
+        <label for="M">Muško</label><br>
+
+        <input type="radio" id="Ž" name="spol" required>
+        <label for="Ž">Žensko</label><br>
+        
+        <input type="radio" id="ono" name="spol" required>
+        <label for="ono">Ne želim se indetificirati</label>
+    </p>
+
+    <p>
+        <label for="opis">* Opis problema:</label><br>
+        <textarea required name="opis" id="opis" cols="50" rows="7" maxlength="200" placeholder="max 200 znakova"></textarea>
+    </p>
+    
+    <p>
+        <input type="submit" value="Pošalji">
+    </p>
+        
+
+
+        <!--<select name="spol" id="spol" >
+            <option value="M">M</option>
+            <option value="Ž">Ž</option>
+        </select>-->
+
+        
+    </p>
 
 
 

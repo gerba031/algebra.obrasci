@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,6 +38,15 @@
     <p>
         <label for="opis">* Opis problema:</label><br>
         <textarea required name="opis" id="opis" cols="50" rows="7" maxlength="200" placeholder="max 200 znakova"></textarea>
+        <p>
+            <label for="datum">Datum prijave</label>
+            <input type="date" id="datum" min="2024-02-18" max="2024-02-29">
+        </p>
+
+        <p>
+            <label for="dokument">Dokument privitak</label>
+            <input type="file" id="dokument">
+        </p>
     </p>
     
     <p>
